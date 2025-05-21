@@ -11,15 +11,18 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+
       - name: Set up Node
         uses: actions/setup-node@v4
         with:
           node-version: '18' # Vagy a projekt által használt Node.js verzió
-          cache: 'yarn'
+          cache: 'npm'
 
       - name: Install dependencies
-        run: yarn install --frozen-lockfile
+        run: npm ci
+
       - name: Build API docs
-        run: yarn docusaurus gen-api-docs all
+        run: npm run docusaurus gen-api-docs all
+
       - name: Build
-        run: yarn build
+        run: npm run build
