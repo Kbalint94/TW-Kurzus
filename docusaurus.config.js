@@ -16,7 +16,7 @@ const config = {
 
   // Set the production url of your site here
   url: 'https://kbalint94.github.io/',
-  baseUrl: '/', 
+  baseUrl: '/TW-Kurzus/', 
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
