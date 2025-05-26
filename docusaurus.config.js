@@ -105,7 +105,16 @@ const config = {
             type: 'docSidebar',
             sidebarId: 'tutorialSidebar',
             position: 'left',
-            label: 'Tutorial',
+            label: 'Tutorials',
+          },
+          {
+        to: '/docs/guides/installation-guide', // Az új guides szekció első oldalának slug-ja, vagy elérési útja a mappa szerkezetben
+        // Idézd fel az órán elhangzottak alapján, ennek a megoldásnak a sajátosságait - lehet sidebarId-vel jobb lehet ezt behivatkozni, ha sok változtatásra számítasz
+        label: 'Guides',
+        position: 'left',
+        // Ha külön oldalsávot szeretnél neki:
+        // type: 'docSidebar',
+        // sidebarId: 'guideSidebar',
           },
           {
         type: 'docSidebar', // Ha külön oldalsávot használsz az API-hoz
