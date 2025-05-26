@@ -4,7 +4,7 @@ sidebar_position: 1
 ---
 
 # Installation guide 1
-# Main header
+# Main header - MD Table test
 |                |ASCII                          |HTML                         |
 |----------------|-------------------------------|-----------------------------|
 |Single backticks|`'Isn't this fun?'`            |'Isn't this fun?'            |
