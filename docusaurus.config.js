@@ -72,15 +72,14 @@ const config = {
     [
       'docusaurus-plugin-openapi-docs',
       {
-        id: 'openapi', // A plugin egyedi azonosítója
+        id: 'openapi', 
         docsPluginId: 'classic',
         config: {
-          petstore: {  // Egyedi azonosító az API doksinak
-            specPath: 'openapi/petstore-api.yaml', // Az OpenAPI fájl elérési útja
-            outputDir: 'docs/petstore', // A generált Markdown fájlok helye
+          petstore: {  
+            specPath: 'openapi/petstore-api.yaml', 
+            outputDir: 'docs/petstore', 
             sidebarOptions: {
-              groupPathsBy: 'tag',  // Csoportosítás tagek alapján az oldalsávban
-          // További opciók a plugin dokumentációja szerint
+              groupPathsBy: 'tag',  
             },
             // Opcionális: downloadButton: true,
           },
@@ -101,15 +100,22 @@ const config = {
           src: 'img/logo.svg',
         },
         items: [
+
           {
             type: 'docSidebar',
             sidebarId: 'tutorialSidebar',
             position: 'left',
-            label: 'Tutorial',
+            label: 'Tutorials',
           },
           {
-        type: 'docSidebar', // Ha külön oldalsávot használsz az API-hoz
-        sidebarId: 'myApiSidebar', // Az API oldalsávjának ID-ja a sidebars.js-ből
+        to: '/docs/guides/installation-guide', 
+        label: 'Guides',
+        position: 'left',
+
+          },
+          {
+        type: 'docSidebar', 
+        sidebarId: 'myApiSidebar',
         label: 'Petstore API',
         position: 'left',
           },
@@ -129,7 +135,7 @@ const config = {
             items: [
               {
                 label: 'Tutorial',
-                to: '/docs/intro',
+                to: '/docs/tutorials/intro',
               },
             ],
           },
